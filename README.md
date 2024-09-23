@@ -8,7 +8,11 @@ This repository contains several implementations for automating the control of w
 
 This project includes the following versions:
 
-- **STEP7 Graph Program:** A sequential control system using Siemens STEP7.
-- **STEP7 Ladder Program:** Ladder logic for Siemens PLC systems.
+- **STEP7 Graph Program:** A sequential control system using Siemens STEP7:
+  ![STEP7 Graph Program](./Images/graph-program.png)
+
+- **STEP7 Ladder Program:** Ladder logic for Siemens PLC systems:
+  ![STEP7 Ladder Program](./Images/ladder-program.png)
+
 - **PIC16F877A Assembly Program:** An assembly program for controlling the water pumps using the PIC16F877A microcontroller.
 - **Proteus Simulation:** A complete simulation of the assembly program using PROTEUS.
