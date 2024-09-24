@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+!_TAG_REVISION_NAME	MCHPTags	//
+!_TAG_REVISION_VERSION	6.0.1	//
+INIT	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	8;"	l	line:8
+MAIN	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	18;"	l	line:18
+P1_ACTIVE	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	22;"	l	line:22
+P2_ACTIVE	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	28;"	l	line:28
+P3_ACTIVE	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	34;"	l	line:34
+RIEN_ACTIVE	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	39;"	l	line:39
+include	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	2;"	l	line:2
+list	C:\Users\Choaib ELMADI\Documents\ENSA\GE-2\S3\Réseaux Locaux Indus\Projet Pompes\Main\main.asm	1;"	l	line:1
