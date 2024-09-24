@@ -22,23 +22,29 @@ MAIN
 P1_ACTIVE
     movlw b'00000001'
     movwf PORTA
+    btfss PORTB, 5
+    goto RIEN_ACTIVE
     btfss PORTB, 1
     goto P1_ACTIVE
 
 P2_ACTIVE
     movlw b'00000011'
     movwf PORTA
+    btfss PORTB, 6
+    goto P1_ACTIVE
     btfss PORTB, 2
     goto P2_ACTIVE
 
 P3_ACTIVE
     movlw b'00000111'
     movwf PORTA
+    btfss PORTB, 7
+    goto P2_ACTIVE
     goto P3_ACTIVE
 
 RIEN_ACTIVE
     movlw b'00000000'
     movwf PORTA
     goto MAIN
-    
+
 end

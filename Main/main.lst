@@ -1,4 +1,4 @@
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  1
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -36,39 +36,45 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
                       00017 
 0008                  00018 MAIN
 0008   1C06           00019     btfss PORTB, 0
-0009   2815           00020     goto RIEN_ACTIVE
+0009   281B           00020     goto RIEN_ACTIVE
                       00021 
 000A                  00022 P1_ACTIVE
 000A   3001           00023     movlw b'00000001'
 000B   0085           00024     movwf PORTA
-000C   1C86           00025     btfss PORTB, 1
-000D   280A           00026     goto P1_ACTIVE
-                      00027 
-000E                  00028 P2_ACTIVE
-000E   3003           00029     movlw b'00000011'
-000F   0085           00030     movwf PORTA
-0010   1D06           00031     btfss PORTB, 2
-0011   280E           00032     goto P2_ACTIVE
-                      00033 
-0012                  00034 P3_ACTIVE
-0012   3007           00035     movlw b'00000111'
-0013   0085           00036     movwf PORTA
-0014   2812           00037     goto P3_ACTIVE
-                      00038 
-0015                  00039 RIEN_ACTIVE
-0015   3000           00040     movlw b'00000000'
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  2
+000C   1E86           00025     btfss PORTB, 5
+000D   281B           00026     goto RIEN_ACTIVE
+000E   1C86           00027     btfss PORTB, 1
+000F   280A           00028     goto P1_ACTIVE
+                      00029 
+0010                  00030 P2_ACTIVE
+0010   3003           00031     movlw b'00000011'
+0011   0085           00032     movwf PORTA
+0012   1F06           00033     btfss PORTB, 6
+0013   280A           00034     goto P1_ACTIVE
+0014   1D06           00035     btfss PORTB, 2
+0015   2810           00036     goto P2_ACTIVE
+                      00037 
+0016                  00038 P3_ACTIVE
+0016   3007           00039     movlw b'00000111'
+0017   0085           00040     movwf PORTA
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0016   0085           00041     movwf PORTA
-0017   2808           00042     goto MAIN
-                      00043     
+0018   1F86           00041     btfss PORTB, 7
+0019   2810           00042     goto P2_ACTIVE
+001A   2816           00043     goto P3_ACTIVE
+                      00044 
+001B                  00045 RIEN_ACTIVE
+001B   3000           00046     movlw b'00000000'
+001C   0085           00047     movwf PORTA
+001D   2808           00048     goto MAIN
+                      00049     
 Warning[205]: Found directive in column 1. (end)
-                      00044 end
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  3
+                      00050 end
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  3
 
 
 SYMBOL TABLE
@@ -127,7 +133,7 @@ CHS1                              00000004
 CHS2                              00000005
 CIS                               00000003
 CKE                               00000006
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  4
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  4
 
 
 SYMBOL TABLE
@@ -186,7 +192,7 @@ INTEDG                            00000006
 INTF                              00000001
 IRP                               00000007
 MAIN                              00000008
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  5
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  5
 
 
 SYMBOL TABLE
@@ -211,8 +217,8 @@ OERR                              00000001
 OPTION_REG                        00000081
 P                                 00000004
 P1_ACTIVE                         0000000A
-P2_ACTIVE                         0000000E
-P3_ACTIVE                         00000012
+P2_ACTIVE                         00000010
+P3_ACTIVE                         00000016
 PCFG0                             00000000
 PCFG1                             00000001
 PCFG2                             00000002
@@ -245,7 +251,7 @@ RA1                               00000001
 RA2                               00000002
 RA3                               00000003
 RA4                               00000004
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  6
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  6
 
 
 SYMBOL TABLE
@@ -291,7 +297,7 @@ RE0                               00000000
 RE1                               00000001
 RE2                               00000002
 READ_WRITE                        00000002
-RIEN_ACTIVE                       00000015
+RIEN_ACTIVE                       0000001B
 RP0                               00000005
 RP1                               00000006
 RSEN                              00000001
@@ -304,7 +310,7 @@ SEN                               00000000
 SMP                               00000007
 SPBRG                             00000099
 SPEN                              00000007
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  7
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  7
 
 
 SYMBOL TABLE
@@ -363,7 +369,7 @@ TRISA1                            00000001
 TRISA2                            00000002
 TRISA3                            00000003
 TRISA4                            00000004
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  8
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  8
 
 
 SYMBOL TABLE
@@ -422,7 +428,7 @@ _BODEN_OFF                        00003FBF
 _BODEN_ON                         00003FFF
 _BOREN_OFF                        00003FBF
 _BOREN_ON                         00003FFF
-MPASM  5.50                          MAIN.ASM   9-24-2024  21:32:58         PAGE  9
+MPASM  5.50                          MAIN.ASM   9-24-2024  21:44:15         PAGE  9
 
 
 SYMBOL TABLE
@@ -467,12 +473,12 @@ __DEBUG                           1
 
 MEMORY USAGE MAP ('X' = Used,  '-' = Unused)
 
-0000 : XXXXXXXXXXXXXXXX XXXXXXXX-------- ---------------- ----------------
+0000 : XXXXXXXXXXXXXXXX XXXXXXXXXXXXXX-- ---------------- ----------------
 
 All other memory blocks unused.
 
-Program Memory Words Used:    24
-Program Memory Words Free:  8168
+Program Memory Words Used:    30
+Program Memory Words Free:  8162
 
 
 Errors   :     0
