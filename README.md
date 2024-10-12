@@ -16,3 +16,5 @@ This project includes the following versions:
 
 - **PIC16F877A Assembly Program:** An assembly program for controlling the water pumps using the PIC16F877A microcontroller.
 - **Proteus Simulation:** A complete simulation of the assembly program using PROTEUS.
+
+https://github.com/user-attachments/assets/243afa8c-0cbd-4f6f-a338-3cf2353241b4
