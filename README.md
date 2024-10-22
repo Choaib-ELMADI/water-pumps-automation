@@ -44,8 +44,4 @@ https://github.com/user-attachments/assets/2134e23a-c7c5-4203-85d6-5477eb4468c1
 
 </div>
 
-<div align="center">
-
 https://github.com/user-attachments/assets/d79d101a-bff1-4c57-a498-dabe98733932
-
-</div>
